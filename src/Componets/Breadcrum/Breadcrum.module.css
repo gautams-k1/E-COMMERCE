@@ -1,0 +1,14 @@
+.Breadcrum{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size:16px ;
+    font-weight: 600;
+    margin: 60px 3vw;
+    text-transform: capitalize;
+}
+.produnt_name{
+    height: 20px;
+    overflow-y: clip;
+}

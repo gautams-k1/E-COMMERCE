@@ -1,0 +1,133 @@
+.cartItems{
+    margin: 0px auto;
+    width: 100%;
+    max-width: 75rem;
+    /* border: 2px solid red; */
+    padding: 1rem;
+    overflow: hidden;
+}
+.cartItems hr{
+    height: 3px;
+    background: #e2e2e2 ;
+    border: 0;
+}
+.cartItems_format{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 3.5vw;
+    padding: 20px 0;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cartitmes_formet_main{
+    font-size: 17px;
+    font-weight: 500;
+}
+.cartitmes_product_icone{
+    height: 62px;
+}
+.cartitems_remove_icone{
+    width: 15px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.cartitmes_quantity{
+    width: 64px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: white;
+}
+.cartitems_down{
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-between;
+    gap: 50px;
+}
+.cartitems_tottle{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 200px; */
+    text-transform: uppercase;
+    gap: 40px;
+    width: 500px;
+}
+.cartitems_total_item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    
+}
+.cartitems_tottle button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background-color: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitems_promocode{
+    /* flex: 1; */
+    font-size: 16px;
+    font-weight: 500;
+}
+.cartitems_promocode p{
+    color: #555;
+}
+.cartitems_propmobox{
+    width: 504px;
+    margin-top: 15px;
+    
+    height: 58px;
+    background: #eaeaea;
+}
+.cartitems_propmobox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    width: 330px;
+    height: 50px;
+}
+.cartitems_propmobox button{
+    width: 170px;
+    height: 58px;
+    font-size: 16px;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:840px) {
+    .cartitems_down{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width:554px) {
+    .cartitems_tottle{
+        width: 100%;
+    }
+    .cartItems_format p{
+        font-size: 13px;
+        height: 20px;
+        overflow-y: clip;
+    }
+    .cartitems_propmobox{
+        width: 100%;
+        display: flex;
+    }
+    .cartitems_propmobox input{
+        width: 80%;
+    }
+    .cartitems_propmobox button{
+        width: 42%;
+    }
+}
