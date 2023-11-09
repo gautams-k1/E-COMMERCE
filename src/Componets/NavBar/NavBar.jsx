@@ -47,7 +47,7 @@ export default function NavBar() {
             <div className={`${styles.mobi_menu} ${isMenuOpen ? styles.mobi_menu_active : ''}`}ref={menuRef} >
                 <img src={offer} alt="" />
                 <ul className={styles.mobi_nav_menu_ul} onClick={()=>{setIsMenuOpen(false)}}>
-                    <li onClick={() => { setmenu('shop') }}><Link style={{ textDecoration: 'none', color: '#626262' }} to='/'>shop</Link>{menu === 'shop' ? <hr /> : <></>}</li>
+                    <li onClick={() => { setmenu('shop') }}><Link style={{ textDecoration: 'none', color: '#626262' }} to='/E-COMMERCE'>shop</Link>{menu === 'shop' ? <hr /> : <></>}</li>
                     <li onClick={() => { setmenu('men') }}><Link style={{ textDecoration: 'none', color: '#626262' }} to='/mens'>men</Link>{menu === 'men' ? <hr /> : <></>}</li>
                     <li onClick={() => { setmenu('women') }}><Link style={{ textDecoration: 'none', color: '#626262' }} to='/womans'>women</Link>{menu === 'women' ? <hr /> : <></>}</li>
                     <li onClick={() => { setmenu('kids') }}><Link style={{ textDecoration: 'none', color: '#626262' }} to='/kids'>kids</Link>{menu === 'kids' ? <hr /> : <></>}</li>
@@ -68,7 +68,7 @@ export default function NavBar() {
             <p>LuxeWard</p>
         </div>
         <ul className={styles.nav_menu}>
-            <li onClick={()=>{setmenu('shop')}}><Link style={{textDecoration:'none',color:'#626262'}} to='/'>shop</Link>{menu==='shop'? <hr/> : <></>}</li>
+            <li onClick={()=>{setmenu('shop')}}><Link style={{textDecoration:'none',color:'#626262'}} to='/E-COMMERCE'>shop</Link>{menu==='shop'? <hr/> : <></>}</li>
             <li onClick={()=>{setmenu('men')}}><Link style={{textDecoration:'none',color:'#626262'}} to='/mens'>men</Link>{menu==='men'? <hr/> : <></>}</li>
             <li onClick={()=>{setmenu('women')}}><Link style={{textDecoration:'none',color:'#626262'}} to='/womans'>women</Link>{menu==='women'? <hr/> : <></>}</li>
             <li onClick={()=>{setmenu('kids')}}><Link style={{textDecoration:'none',color:'#626262'}} to='/kids'>kids</Link>{menu==='kids'? <hr/> : <></>}</li>
