@@ -17,7 +17,7 @@ function App() {
         <Router>
         <NavBar></NavBar>
         <Routes>
-            <Route path='/' element={<Shop/>}/>
+            <Route path='' element={<Shop/>}/>
             <Route path='/mens' element={<ShopCategory banner={men_banner} category='men'/>}/>
             <Route path='/womans' element={<ShopCategory banner={women_banner} category='women'/>}/>
             <Route path='/kids' element={<ShopCategory banner={kids_banner} category='kid'/>}/>
